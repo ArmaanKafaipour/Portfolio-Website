@@ -5,7 +5,7 @@ import PortfolioList from "../portfolioList/PortfolioList";
 import { webPortfolio, netPortfolio, fpgaPortfolio } from "../../data";
 
 export default function Portfolio() {
-  const [selected, setSelected] = useState("web");
+  const [selected, setSelected] = useState("net");
   const [data, setData] = useState([]);
 
   const list = [
