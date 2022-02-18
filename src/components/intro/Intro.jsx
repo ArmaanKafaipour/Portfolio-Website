@@ -18,9 +18,9 @@ export default function Intro() {
   return (
     <div className="intro" id="intro">
       <div className="left">
-        {/* <div className="imgContainer">
+        <div className="imgContainer">
           <img src="assets/portraitPlaceholder.png" alt="" />
-        </div> */}
+        </div>
       </div>
       <div className="right">
         <div className="wrapper">
