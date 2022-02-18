@@ -1,0 +1,14 @@
+// $mainColor: #185a86;
+
+$mainColor: rgba(53, 97, 128, 1);
+$darkMode: #26272b;
+$darkMode2: #1f1b24;
+$darkerMode: #121212;
+
+$width: 768px;
+
+@mixin mobile {
+  @media (max-width: #{$width}) {
+    @content;
+  }
+}

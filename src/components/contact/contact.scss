@@ -1,0 +1,107 @@
+@import "../../global.scss";
+
+.contact {
+  background-color: $darkMode;
+  color: white;
+  display: flex;
+
+  @include mobile {
+    flex-direction: column;
+  }
+
+  .right {
+    flex: 4;
+    overflow: hidden;
+
+    img {
+      height: 100%;
+    }
+  }
+  .left {
+    flex: 3;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    h2 {
+      font-size: 30px;
+    }
+
+    form {
+      width: 90%;
+      height: 60%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-around;
+
+      input {
+        width: 350px;
+        height: 30px;
+
+        padding: 6px;
+        font-size: 16px;
+        border-width: 1px;
+        border-color: #575757;
+        background-color: #e9e9e9;
+        color: #000000;
+        border-style: solid;
+        border-radius: 10px;
+        box-shadow: 4px 4px 11px rgba(10, 21, 59, 0.8);
+
+        @include mobile {
+          width: 200px;
+          height: 20px;
+        }
+      }
+
+      textarea {
+        width: 350px;
+        height: 200px;
+
+        padding: 6px;
+        font-size: 16px;
+        border-width: 1px;
+        border-color: #575757;
+        background-color: #e9e9e9;
+        color: #000000;
+        border-style: solid;
+        border-radius: 10px;
+        box-shadow: 4px 4px 11px rgba(10, 21, 59, 0.8);
+
+        @include mobile {
+          width: 200px;
+          height: 100px;
+        }
+      }
+
+      button {
+        width: 210px;
+        height: 45px;
+        font-size: 16px;
+        color: white;
+        background-color: $mainColor;
+        border: none;
+        border-radius: 10px;
+        font-weight: 500;
+        cursor: pointer;
+
+        &:focus {
+          outline: none;
+        }
+      }
+
+      span {
+        color: green;
+      }
+    }
+    .captcha {
+      // transform: scale(1.09);
+
+      span {
+        color: red;
+      }
+    }
+  }
+}
